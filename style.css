@@ -1,0 +1,309 @@
+/* Genel Ayarlar */
+
+* { 
+
+    margin: 0; 
+
+    padding: 0; 
+
+    box-sizing: border-box; 
+
+    font-family: 'Poppins', sans-serif; 
+
+}
+
+
+
+body {
+
+    background-color: #0f172a !important; 
+
+    background-image: url('images/arka-plan.jpg') !important; 
+
+    background-repeat: no-repeat;
+
+    background-position: center;
+
+    background-attachment: fixed;
+
+    background-size: cover;
+
+    height: 100vh;
+
+    display: flex; 
+
+    justify-content: center; 
+
+    align-items: center;
+
+    color: white; 
+
+    overflow: hidden;
+
+    position: relative;
+
+}
+
+
+
+/* Karartma Katmanı */
+
+body::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0; left: 0; width: 100%; height: 100%;
+
+    background: rgba(0, 0, 0, 0.5); 
+
+    z-index: -1;
+
+}
+
+
+
+/* Ana Kart Yapısı */
+
+.card {
+
+    background: rgba(255, 255, 255, 0.05);
+
+    backdrop-filter: blur(25px);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    padding: 40px; 
+
+    border-radius: 30px;
+
+    width: 480px; 
+
+    text-align: center;
+
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
+
+    z-index: 1;
+
+}
+
+
+
+.card::before {
+
+    content: "🌤️ HAVA DURUMU MERKEZİ";
+
+    display: block;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    margin-bottom: 25px;
+
+    color: #00f7ff;
+
+    letter-spacing: 2px;
+
+}
+
+
+
+/* Arama Bölümü ve Butonlar */
+
+.search { 
+
+    display: flex; 
+
+    gap: 8px; 
+
+    margin-bottom: 25px; 
+
+}
+
+
+
+input {
+
+    flex: 1; 
+
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+
+    outline: none;
+
+    background: rgba(255, 255, 255, 0.1);
+
+    padding: 12px 20px; 
+
+    border-radius: 30px;
+
+    color: white;
+
+    font-size: 14px;
+
+}
+
+
+
+/* Ortak Buton Stili */
+
+button {
+
+    border: none; 
+
+    width: 45px; 
+
+    height: 45px;
+
+    border-radius: 50%; 
+
+    cursor: pointer; 
+
+    transition: all 0.3s ease;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 18px;
+
+}
+
+
+
+/* Ara Butonu (Büyüteç) */
+
+#searchBtn {
+
+    background: #00f7ff; 
+
+    box-shadow: 0 0 15px rgba(0, 247, 255, 0.4);
+
+}
+
+
+
+/* Konum Butonu (Pin) */
+
+#locationBtn {
+
+    background: rgba(255, 255, 255, 0.2);
+
+    color: white;
+
+}
+
+
+
+button:hover {
+
+    transform: scale(1.1);
+
+    filter: brightness(1.2);
+
+}
+
+
+
+/* Hava Durumu İçeriği */
+
+.main-weather h2 { font-weight: 400; opacity: 0.9; }
+
+.main-weather h1 { font-size: 60px; color: #00f7ff; margin: 5px 0; }
+
+#weatherIcon { filter: drop-shadow(0 0 10px rgba(255,255,255,0.3)); }
+
+
+
+.stats { 
+
+    display: flex; 
+
+    justify-content: space-around; 
+
+    margin: 25px 0; 
+
+    background: rgba(255, 255, 255, 0.05); 
+
+    padding: 15px; 
+
+    border-radius: 20px; 
+
+    border: 1px solid rgba(255, 255, 255, 0.05);
+
+}
+
+
+
+.divider { border: 0; border-top: 1px solid rgba(255, 255, 255, 0.1); margin: 20px 0; }
+
+
+
+/* 5 Günlük Tahmin Listesi */
+
+.forecast { 
+
+    display: flex; 
+
+    gap: 12px; 
+
+    overflow-x: auto; 
+
+    padding-bottom: 10px;
+
+    scrollbar-width: thin;
+
+    scrollbar-color: rgba(0, 247, 255, 0.3) transparent;
+
+}
+
+
+
+.forecast-item {
+
+    background: rgba(255, 255, 255, 0.07);
+
+    padding: 12px; 
+
+    border-radius: 18px;
+
+    min-width: 90px; 
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 5px;
+
+}
+
+
+
+.forecast-item img {
+
+    width: 40px;
+
+    height: 40px;
+
+}
+
+
+
+.forecast-item .day { font-weight: 600; font-size: 13px; }
+
+.forecast-item .temp { color: #00f7ff; font-weight: bold; }
+
+
+
+/* Kaydırma çubuğu tasarımı (Chrome/Safari) */
+
+.forecast::-webkit-scrollbar { height: 5px; }
+
+.forecast::-webkit-scrollbar-thumb { background: rgba(0, 247, 255, 0.3); border-radius: 10px; }

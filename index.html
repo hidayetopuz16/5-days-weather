@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather | 5 Günlük Hava Durumu</title>
+    <link rel="stylesheet" href="style.css?v=3">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="card">
+    <div class="search">
+        <input type="text" id="cityInput" placeholder="Şehir ismini buraya yazın..." spellcheck="false">
+        <button id="searchBtn">🔍</button>
+    </div>
+
+    <p class="welcome-msg" id="welcomeMsg">Lütfen hava durumunu görmek istediğiniz şehri giriniz.</p>
+    
+    <div id="weatherDisplay" style="display: none;">
+        <div class="main-weather">
+            <h2 id="city">Şehir</h2>
+            <img id="weatherIcon" src="" alt="Hava Durumu" style="width: 100px; margin: 10px 0; display: none;">
+            <h1 id="temp">--°C</h1>
+            <p id="description">Hava durumu</p>
+        </div>
+
+        <div class="stats">
+            <div class="stat-item">
+                <span id="humidity">--%</span><br>
+                <small>Nem</small>
+            </div>
+            <div class="stat-item">
+                <span id="wind">-- km/h</span><br>
+                <small>Rüzgar</small>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <div class="forecast" id="forecastBox">
+            </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
