@@ -13,7 +13,7 @@ Bu çalışma, kullanıcıların hem manuel şehir araması yapabileceği hem de
 * **📱 Tam Duyarlı Yapı:** Mobil cihazlardan masaüstü ekranlara kadar her boyutta kusursuz görüntüleme.
 
 ## 📸 Uygulama Görünümü
-![Ekran Görüntüsü](./screenshot.jpg)
+![Ekran Görüntüsü](./images/screenshot.jpg)
 
 ## 📦 Kurulum ve Kullanım
 
