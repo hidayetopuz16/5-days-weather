@@ -7,7 +7,6 @@ Bu çalışma, kullanıcıların hem manuel şehir araması yapabileceği hem de
 ## 🚀 [Uygulamayı Canlı İzle](https://hidayetopuz16.github.io/weather-app/)
 
 ## 🛠️ Öne Çıkan Özellikler
-* **📍 Coğrafi Konum Desteği:** Tek bir dokunuşla mevcut koordinatlarınız üzerinden hava durumu verilerini çekin.
 * **🔍 Dinamik Şehir Arama:** Dünya üzerindeki herhangi bir şehri ismine göre anında sorgulayın.
 * **📅 5 Günlük Tahmin Listesi:** Gelecek 5 güne dair sıcaklık ve hava durumu görsellerini içeren detaylı öngörü alanı.
 * **💎 Gelişmiş Arayüz (UI):** Glassmorphism tarzında, büyük ve etkileşimli butonlarla optimize edilmiş şık tasarım.
